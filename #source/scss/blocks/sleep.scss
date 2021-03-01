@@ -1,0 +1,103 @@
+.sleep__holder {
+	background:url('../../../images/sleep/frangipani.png') no-repeat;
+	background-position: right 95%;
+}
+
+.sleep__desc {
+  min-height: 415px;
+  background-position: right;
+}
+
+.holder-info--sleep {
+ margin: -50px 0 70px 0;
+}
+
+.quantity {
+  display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  display: block;
+  width: 25px;
+  background: transparent;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 36px;
+  letter-spacing: 6px;
+  color: #fff;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  position: static;
+  display: block;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-size: 20px;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  color: #4AF6CD;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 30px;
+  top: 45px;
+  color: #4AF6CD;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 790px) {
+  .sleep__desc {
+    background:none !important;
+    min-height: 0;
+    margin: -70px 0 80px 0;
+    .subtitle__title {
+      flex-wrap: wrap;
+      .subtitle__list {
+        flex-basis: 100%;
+        padding-left: 0;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .sleep__holder {
+    background-size: 30%;
+    background-position: right 84%;
+  }
+  .holder-info--sleep {
+    margin-bottom: 0;
+  }
+}
